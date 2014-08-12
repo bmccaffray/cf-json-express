@@ -13,7 +13,7 @@ app.get('/', function(req, res) {
 });
 
 app.get('/:nameInput', function(req, res) {
- 	res.send('Hello ' + req.params.nameInput + '!');
+ 	res.send({'msg': 'Hello ' + req.params.nameInput + '!'});
 });
 
 var server = http.createServer(app);
